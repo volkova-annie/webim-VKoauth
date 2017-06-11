@@ -6,29 +6,19 @@ function VkInit(){
 
   setTimeout(function() {
     VK.Auth.getLoginStatus(VkLoginStatus, true)
-  }, 0)
+  }, 0);
 }
-
 
 const authBtn = document.querySelector('.js-auth');
 authBtn.addEventListener('click', function(event){
-  VK.Auth.login(VkLogin)
+  VK.Auth.login(VkLogin);
 })
 
-function VkLogin(data){
-  VkLoginStatus(data)
-}
-
-function VKUser(data) {
-  console.log(data);
-}
-
 function VkLoginStatus(data){
-  console.log('VkLoginStatus', data.session, data.status);
   if (data.status === 'connected') {
     const userName = document.querySelector('.js-user-name');
 
-    userName.innerText = data.session.user.first_name + ' ' + data.session.user.last_name
+    userName.innerText = data.session.user.first_name + ' ' + data.session.user.last_name;
 
     VK.api('friends.get',
     {
