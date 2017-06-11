@@ -14,6 +14,10 @@ authBtn.addEventListener('click', function(event){
   VK.Auth.login(VkLogin);
 })
 
+function VkLogin(data){
+  VkLoginStatus(data)
+}
+
 function VkLoginStatus(data){
   if (data.status === 'connected') {
     const userName = document.querySelector('.js-user-name');
