@@ -1,0 +1,14 @@
+{
+  "name": "webim",
+  "version": "0.0.1",
+  "description": "",
+  "scripts": {
+    "bs": "node browser-sync",
+    "dev": "npm run bs"
+  },
+  "author": "Annie",
+  "license": "MIT",
+  "devDependencies": {
+    "browser-sync": "^2.18.12"
+  }
+}
