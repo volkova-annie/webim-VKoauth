@@ -3,15 +3,21 @@
 <head>
   <meta charset="UTF-8">
   <title>Webim</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="/public/style.css">
   <script src='https://vk.com/js/api/openapi.js?146', type='text/javascript'></script>
   <script src='public/script.js' defer='defer'></script>
 </head>
 <body>
-  <button class="js-auth">Авторизоваться</button>
-  <div>
-    <h3 class="js-user-name"></h3>
-    <ul class="js-user-friends"></ul>
+  <div class="container">
+    <div class="row">
+      <button class="js-auth btn btn-success">Авторизоваться</button>
+      <div>
+        <h3 class="js-user-name"></h3>
+        <ul class="js-user-friends"></ul>
+      </div>
+      <button class="js-logout" style="display:none">Выйти</button>
+    </div>
   </div>
-  <button class="js-logout" style="display:none">Выйти</button>
 </body>
 </html>
