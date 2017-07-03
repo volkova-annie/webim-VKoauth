@@ -76,4 +76,6 @@ function cleanInfo(){
   friendsList.innerText='';
   const logoutBtn = document.querySelector('.js-logout');
   logoutBtn.style.display='none';
+  const authBtn = document.querySelector('.js-auth');
+  authBtn.style.display='block';
 }
