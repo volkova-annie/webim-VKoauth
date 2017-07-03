@@ -1,0 +1,14 @@
+.js-auth, .js-logout {
+  margin-top: 30px;
+}
+.user-friend:hover {
+  text-decoration: none;
+  color: #32257c;
+}
+.user-friend:visited {
+  text-decoration: none;
+  color: #682e77;
+}
+.user-friend:link {
+  text-decoration: none;
+}
