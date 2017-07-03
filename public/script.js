@@ -21,6 +21,7 @@ function VkLogin(data){
 function VkLoginStatus(data){
   if (data.status === 'connected') {
     const userName = document.querySelector('.js-user-name');
+    const authBtn = document.querySelector('.js-auth');
 
     userName.innerText = data.session.user.first_name + ' ' + data.session.user.last_name;
 
@@ -31,6 +32,7 @@ function VkLoginStatus(data){
     },
     showFriends)
     showLogoutButton();
+    authBtn.style.display='none';
   } else {
     cleanInfo();
   }
