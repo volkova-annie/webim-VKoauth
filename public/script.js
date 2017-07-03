@@ -44,7 +44,7 @@ function showFriends(data) {
   let HTML = '';
   friends.forEach(function(friend){
     HTML += `<li>
-      <a href="https://vk.com/id${friend.user_id}" target="_blank">
+      <a href="https://vk.com/id${friend.user_id}" target="_blank" class="user-friend">
         ${friend.first_name} ${friend.last_name}
       </a>
     </li>`
